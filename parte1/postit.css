@@ -20,7 +20,6 @@ main {
   border: 3px solid black;
   width: 20em;
   height: 20em;
-
   border-radius: 8px;
   position: relative;
   display: flex;
