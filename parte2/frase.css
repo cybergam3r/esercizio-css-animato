@@ -1,0 +1,80 @@
+
+body {
+  font-family: 'Bree Serif', serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65em;
+  margin: 0;
+}
+main {
+  text-align: center;
+}
+#testoAlternato {
+  display: inline-block;
+  padding: 10px 20px; 
+  border: 3px solid gray; 
+  border-radius: 10px; 
+  padding-right: 3em;
+  padding-left: 3em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+#testoAlternato p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0;
+}
+#testoAlternato .parole {
+  display: inline-block;
+  position: relative;
+  height: 1.3em;
+  width: 5em;
+  vertical-align: text-bottom;
+}
+#testoAlternato .parole i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  color: blue;
+  font-style: normal;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: rotateWords 6s linear infinite;
+}
+#testoAlternato .parole i:nth-child(1) {
+  animation-delay: 0s;
+}
+#testoAlternato .parole i:nth-child(2) {
+  animation-delay: 2s;
+}
+#testoAlternato .parole i:nth-child(3) {
+  animation-delay: 4s;
+}
+@keyframes rotateWords {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}

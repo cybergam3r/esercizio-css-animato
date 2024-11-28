@@ -1,0 +1,42 @@
+body {
+  font-family: 'Indie Flower';
+  background-color: gray;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65em;
+}
+main {
+  text-align: center;
+}
+.postit-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 8em; 
+  justify-content: center;
+}
+.postit {
+  border: 3px solid black;
+  width: 20em;
+  height: 20em;
+
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5em 1em black;
+  transform-origin: center;
+  transition: transform 0.3s; 
+}
+.content {
+  font-size: 4em;
+  font-weight: bold;
+}
+.caption {
+  position: absolute;
+  bottom: 1em;
+  font-size: 2em;
+  margin: 0;
+}
